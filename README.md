@@ -1,5 +1,7 @@
 # esphome-rtl433-thermo
-This is an attemp to create a Home Assistant ESPHhome component that is able to receive data from a 433Mhz sensor
+This is an attemp to create a Home Assistant ESPHhome component that is able to receive data from a 433Mhz sensor.
+Pretty simple component, that is based on the **excellent work** of the [rtl_433_ESP](https://github.com/NorthernMan54/rtl_433_ESP) and [rtl_433](https://github.com/merbanan/rtl_433) projects.
+Main purpose for this work, is to integrate everything into Home Assistant.
 
 ## Supported devices
 Tested only with a pair of ORIA Fridge Thermometers. They seem to be compatible with LaCrosse TX141-Bv2 as found in rtl_433_ESP.
