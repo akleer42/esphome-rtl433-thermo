@@ -4,7 +4,7 @@ Pretty simple component, that is based on the **excellent work** of the [rtl_433
 Main purpose for this work, is to integrate everything into Home Assistant.
 
 ## Supported devices
-Tested only with a pair of ORIA Fridge Thermometers. They seem to be compatible with LaCrosse TX141-Bv2 as found in rtl_433_ESP.
+Tested only with a pair of ORIA Fridge Thermometers. They are identified as LaCrosse TX141-Bv2 by rtl_433_ESP.
 As Receiver/Tranceiver a TI CC1101 was used.
 
 **Note**: Additional sensors could be added with only minor modifications.
