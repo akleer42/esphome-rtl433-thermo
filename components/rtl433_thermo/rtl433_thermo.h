@@ -8,7 +8,7 @@ namespace rtl433_thermo {
 
 #define NUM_CHANNELS  2
 
-class RTL433ThermoSensor : public sensor::Sensor, public PollingComponent {
+class RTL433ThermoSensor : public sensor::Sensor, public Component {
 
   public:
     sensor::Sensor *temperature_sensor_[NUM_CHANNELS]{nullptr, nullptr};
