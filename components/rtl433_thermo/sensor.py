@@ -28,7 +28,7 @@ CONF_CH2_SIGNAL_STRENGTH = 'ch2_signal_strength'
 
 rtl433_thermo_ns = cg.esphome_ns.namespace("rtl433_thermo")
 RTL433ThermoSensor = rtl433_thermo_ns.class_(
-    "RTL433ThermoSensor", cg.Component, cg.PollingComponent
+    "RTL433ThermoSensor", cg.Component#, cg.PollingComponent
 )
 
 CONFIG_SCHEMA = (
