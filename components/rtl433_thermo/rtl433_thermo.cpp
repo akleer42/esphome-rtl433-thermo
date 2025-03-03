@@ -49,6 +49,7 @@ void rtl433_Callback(char* message) {
  */
 void RTL433ThermoSensor::setup() {
   ESP_LOGCONFIG(TAG, "Setting up RF433...");
+  instance = this;
 
   ESP_LOGCONFIG(TAG, "InitReceiver - Receiver GPIO %i RF_MODULE_FREQUENCY %f", RF_MODULE_RECEIVER_GPIO, RF_MODULE_FREQUENCY);
   rf.initReceiver(RF_MODULE_RECEIVER_GPIO, RF_MODULE_FREQUENCY);
@@ -63,7 +64,6 @@ void RTL433ThermoSensor::setup() {
   rf.getModuleStatus();
 
   ESP_LOGCONFIG(TAG, "leaving");
-  instance = this;
   return;
 }
 
@@ -71,12 +71,12 @@ void RTL433ThermoSensor::loop() {
   rf.loop();
 }
 
+#if 0
 void RTL433ThermoSensor::update() {
   //ESP_LOGCONFIG(TAG, "update() entering");
-  instance = this;
-
   //ESP_LOGCONFIG(TAG, "update() leaving");
 }
+#endif
 
 void RTL433ThermoSensor::dump_config() { 
   ESP_LOGCONFIG(TAG, "dump_config() entering"); 
